@@ -6,7 +6,8 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto';
+    /* font-family: Tahoma, sans-serif; */
+    font-family: "Arial";
     margin: 0;
     padding: 0;
 }
@@ -20,6 +21,13 @@ nav, .hero {
 nav {
     display: flex;
     justify-content: space-around;
+}
+
+nav img {
+    width: 75px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 300px;
 }
 
 nav ul {
@@ -51,12 +59,16 @@ nav ul {
     padding-right: 40px;
 }
 
+.hero-image img {
+    width: 500px;
+    height: auto;
+}
+
 .hero .hero-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: grey;
 }
 
 .hero-title h1 {
@@ -65,7 +77,7 @@ nav ul {
     color: #F9FAF8;
 }
 
-.hero-title button {
+.button {
     width: 25%;
     height: 40px;
     font-size: 20px;
@@ -80,7 +92,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     margin: auto 0;
 }
 
@@ -98,9 +110,16 @@ nav ul {
     border-radius: 10%;
 }
 
+.item div img {
+    width: 192px; 
+    height: auto;
+    border-radius: 15px;
+}
+
 .item p {
     width: 200px;
     text-align: center;
+    font-weight: 100;
 }
 
 .jumbo {
@@ -124,4 +143,83 @@ nav ul {
 
 .flex h3 {
     line-height: 10px;
+}
+
+.quote-container, .quote-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    margin-top: 100px;
+    background-color: #E5E7EB;
+    height: 500px;
+}
+
+.quote-flex-container {
+    flex-direction: column;
+    width: 55%;
+}
+
+.quote-flex-container .quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-flex-container .quote-name {
+    align-self: flex-end;
+    justify-content: flex-start;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    height: 200px;
+}
+
+.call-to-action-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    width: 70%;
+    border-radius: 12px;
+    padding: 80px;
+}
+
+.call-right {
+    color: white;
+}
+
+.call-right h3 {
+    line-height: 0;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.call-right p {
+    font-weight: 10px;
+}
+
+.call-to-button {
+    width: 100px;
+    border: 2px solid white;
+}
+
+footer {
+    height: 100px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    color: white;
 }
